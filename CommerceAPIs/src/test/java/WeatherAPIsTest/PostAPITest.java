@@ -49,6 +49,12 @@ public class PostAPITest {
 
 		// ---------Verifying Response Body attributes-----------
 		Assert.assertEquals(rsponse.jsonPath().getString("SuccessCode"), "OPERATION_SUCCESS");
+		
+		// ----------Verifying Header values-----------------
+		
+		Assert.assertEquals(rsponse.header("Content-Type"), "application/json");
+		
+		Assert.assertEquals(rsponse.header("Content-Encoding"), "gzip");
 
 	}
 
