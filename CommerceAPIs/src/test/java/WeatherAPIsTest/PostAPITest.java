@@ -53,7 +53,7 @@ public class PostAPITest {
 		// ----------Verifying Header values-----------------
 		
 		Assert.assertEquals(rsponse.header("Content-Type"), "application/json");
-		
+		System.out.println("Header value of 'Content-Encoding' is ---> "+rsponse.header("Content-Encoding"));
 		Assert.assertEquals(rsponse.header("Content-Encoding"), "gzip");
 
 	}
