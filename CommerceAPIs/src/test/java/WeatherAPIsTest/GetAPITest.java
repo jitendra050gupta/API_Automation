@@ -43,7 +43,7 @@ public class GetAPITest {
 			
 		}
 		
-		// -------------Verifying header value------------
+		// ------------------Verifying header value-------------------
 		Assert.assertEquals(response.header("Content-Type"), "application/json; charset=utf-8");
 		
 		
